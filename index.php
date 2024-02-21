@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -132,7 +135,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <a href="cv.pdf"> <button type="submit" class="button button-a button-big button-rouded">Voir Plus</button></a>
+                                    <a href="cv.pdf" target="_blank"> <button type="submit" class="button button-a button-big button-rouded">Voir Plus</button></a>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -172,23 +175,36 @@
                             Services
                         </h3>
                         <p class="subtitle-a text-center">
-                            Bienvenue dans nos services, où votre satisfaction est notre priorité !
-                        </p>
+                        Explorez mes services, votre passerelle vers des solutions sur mesure et de qualité.                        </p>
                         <div class="line-mf"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-wifi"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Administration reseau </h2>
+                            <p class="s-description ">
+                            Bienvenue dans ma section dédiée à l'administration réseau. En tant qu'administrateur réseau, je m'efforce de maintenir la stabilité et la sécurité de votre infrastructure informatique. Que ce soit la configuration, la surveillance ou la résolution de problèmes.  </p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4">
                     <div class="service-box">
                         <div class="service-ico">
                             <span class="ico-circle"><i class="ion-monitor"></i></span>
                         </div>
                         <div class="service-content">
-                            <h2 class="s-title">Technicien Reseau </h2>
+                            <h2 class="s-title">Maintenance d'ordinateur </h2>
                             <p class="s-description ">
-                                Profitez de notre service de technicien réseau expert pour une connectivité sans faille. Notre équipe qualifiée résout rapidement les problèmes, optimise les performances et assure la stabilité de votre infrastructure réseau, garantissant ainsi une expérience
-                                informatique fluide et fiable. </p>
+                                
+Bienvenue dans ma section dédiée à la maintenance informatique. Je suis là pour assurer le bon fonctionnement de votre ordinateur. De la résolution de problèmes à la mise à jour de logiciels, je veille à ce que votre système soit performant. </p>
                         </div>
                     </div>
                 </div>
@@ -205,16 +221,16 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-md-4">
                     <div class="service-box">
                         <div class="service-ico">
-                            <span class="ico-circle"><i class="ion-camera"></i></span>
+                            <span class="ico-circle"><i class="ion-paintbrush"></i></span>
                         </div>
                         <div class="service-content">
-                            <h2 class="s-title">graphiste </h2>
+                            <h2 class="s-title">design graphique </h2>
                             <p class="s-description ">
-                                Transformez votre vision en réalité visuelle avec notre service de graphisme créatif. Des designs uniques et percutants adaptés à vos besoins, pour donner vie à vos idées. </p>
-                        </div>
+                            Bienvenue dans ma section de Graphic Design ! Je suis un passionné de la création visuelle, spécialisé dans la conception de logos, flayer d'illustrations et de mises en page. Mon objectif est de donner vie à vos idées et de communiquer efficacement votre message à travers des designs créatifs.   </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -226,7 +242,7 @@
                             <h2 class="s-title">Montage Video</h2>
                             <p class="s-description ">
                                 Transformez vos moments spéciaux en souvenirs inoubliables avec notre service de montage vidéo professionnel. Nous mettons en œuvre créativité et expertise pour donner vie à vos images, capturer l'essence de chaque instant et créer des vidéos qui racontent
-                                votre histoire de manière unique et émouvante. </p>
+                                votre histoire. </p>
                         </div>
                     </div>
                 </div>
@@ -292,11 +308,10 @@
                 <div class="col-sm-12">
                     <div class="title-box ">
                         <h3 class="title-a text-center">
-                            Projets realisé
+                        portfolio
                         </h3>
                         <p class="subtitle-a text-center">
-                            Bienvenue dans l'univers de nos projets réalisés, où chaque création raconte une histoire unique. </p>
-                        <div class="line-mf"></div>
+                        Découvrez mon portfolio, une vitrine de mes réalisations passées, où l'art et la créativité prennent vie.                        <div class="line-mf"></div>
                     </div>
                 </div>
             </div>
@@ -403,13 +418,13 @@
                                         </h5>
                                     </div>
                                     <div>
-                                        <form action="" method="post" role="form" class="contactForm">
-                                            <div id="sendmessage">Votre message a été envoyé. Merci!</div>
-                                            <div id="errormessage"></div>
+                                       
+                                        <form action="contactform/contactform.php" method="post" role="form" class="contactForm">
+                                              <div id="errormessage"></div>
                                             <div class="row">
                                                 <div class="col-md-12 mb-3">
                                                     <div class="form-group">
-                                                        <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Veuillez saisir au moins 4 caractères" />
+                                                        <input type="text" name="nom" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Veuillez saisir au moins 4 caractères" />
                                                         <div class="validation"></div>
                                                     </div>
                                                 </div>
@@ -421,7 +436,7 @@
                                                 </div>
                                                 <div class="col-md-12 mb-3">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Veuillez saisir au moins 8 caractères de sujet" />
+                                                        <input type="text" class="form-control" name="sujet" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Veuillez saisir au moins 4 caractères de sujet" />
                                                         <div class="validation"></div>
                                                     </div>
                                                 </div>
@@ -455,10 +470,11 @@
                                     </div>
                                     <div class="socials">
                                         <ul>
-                                            <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                                            <li><a href="https://www.facebook.com/kaissanesaidahmed" target="_blank"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
                                             <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
                                             <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                                            <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                                            <li><a href="https://www.linkedin.com/in/said-ahmed-kaissane-0a9b84190/?jobid=1234" target="_blank"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+
                                         </ul>
                                     </div>
                                 </div>
